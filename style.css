@@ -1,0 +1,325 @@
+body {
+	font-family: 'Bitter', serif;
+	/* background-image: url(Girl\ Erotic\ Dancing\ -\ 29438.mp4);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	background-color: rgba(230, 230, 230, 0.5); */
+}
+
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .9;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 800;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin: 0 0 -30px 0;
+	letter-spacing: 5px;
+
+}
+
+h2 {
+	font-size: 30px;
+	display: block;
+	width: 100%;
+	color: #fff;
+	border-bottom: 3px #fff solid;
+	padding-bottom: 5px;
+}
+
+#points {
+	text-align: center;
+	border-top: 3px black solid;
+	border-bottom: 3px black solid;
+	padding: 10px 0px;
+	font-size: 26px;
+	background-color: whitesmoke;
+	opacity: .7;
+}
+
+#points div {
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 30px;
+
+}
+
+#blackJack {
+	width: 1024px;
+	margin: 10px auto;
+	position: relative;
+	opacity: .8;
+}
+
+#table {
+	background-color: rgba(0, 150, 0, .7);
+	padding: 50px 100px;
+	border-radius: 100px;
+	border: 3px black solid;
+	margin: 35px 0px;
+	/* opacity: .8; */
+}
+
+#playersCards,
+#dealersCards {
+	display: flex;
+	margin-bottom: 30px;
+	min-height: 110px;
+}
+
+.card {
+	background: #fff;
+	width: 60px;
+	padding: 50px 20px;
+	font-weight: bold;
+	margin-right: 20px;
+	box-shadow: 0.2em 0.2em 0.5em #333;
+	border-radius: 10px;
+	font-size: 30px;
+}
+
+.hearts,
+.diamonds {
+	color: #ff0000;
+}
+
+.spades,
+.clubs {
+	color: #000;
+}
+
+#message {
+	display: none;
+	z-index: 9999;
+	position: absolute;
+	top: 300px;
+	width: 100%;
+	padding: 50px 0px;
+	background-color: rgba(255, 255, 255, 0.95);
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	-webkit-box-shadow: -1px 14px 73px -22px rgba(0, 0, 0, 0.56);
+	-moz-box-shadow: -1px 14px 73px -22px rgba(0, 0, 0, 0.56);
+	box-shadow: -1px 14px 73px -22px rgba(0, 0, 0, 0.56);
+}
+
+#buttons {
+	padding-top: 30px;
+	text-align: center;
+}
+
+#buttons button {
+	padding: 10px 30px;
+	border-radius: 30px;
+	background: #000;
+	color: #fff;
+	margin: 0 50px;
+	font-size: 30px;
+}
+
+#buttons #start {
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: auto;
+	padding: 10px 20px;
+}
+
+@media(orientation:portrait) {
+	body {
+		height: 100vh;
+		width: auto;
+
+	}
+
+	#blackJack {
+		width: 100%;
+		height: 300px;
+		margin: 10px auto;
+		position: relative;
+		opacity: .8;
+	}
+
+	#table {
+		/* background-color: green; */
+		padding: 10px 30px;
+		border-radius: 50px;
+		border: 3px black solid;
+		margin: 50px 0 30px 0px;
+	}
+
+	#playersCards,
+	#dealersCards {
+		display: flex;
+		margin-bottom: 20px;
+		min-height: 50px;
+	}
+
+	.card {
+		width: 30px;
+		padding: 20px 5px;
+		margin-right: 10px;
+		font-size: 15px;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	#points {
+		text-align: center;
+		border-top: 2px black solid;
+		border-bottom: 2px black solid;
+		padding: 10px 0px;
+		font-size: 20px;
+		background-color: whitesmoke;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+
+	#points div {
+		padding-top: 5px;
+		font-weight: bold;
+		font-size: 20px;
+		opacity: 1;
+	}
+
+	#buttons {
+		padding-top: 15px;
+	}
+
+	#buttons button {
+		padding: 10px 30px;
+		border-radius: 20px;
+		margin: 0 10px;
+		font-size: 17px;
+	}
+
+	#message {
+		top: 50%;
+		width: 100%;
+		padding: 20px 0;
+		font-size: 3rem;
+
+	}
+}
+
+@media(orientation:landscape) and (max-width: 1023px) {
+	body {
+		height: auto;
+		width: 100vw;
+		overflow: hidden;
+	}
+
+	#blackJack {
+		width: 100%;
+		height: auto;
+		margin: 10px auto;
+		position: relative;
+		opacity: .8;
+	}
+
+	#table {
+		padding: 10px 20px;
+		margin: 30px 0;
+		position: absolute;
+		left: 2%;
+		top: 4vh;
+		width: 33%;
+		border-radius: 15px;
+	}
+
+	#playersCards,
+	#dealersCards {
+		display: flex;
+		margin-bottom: 10px;
+		min-height: 40px;
+	}
+
+	.card {
+		width: 30px;
+		padding: 20px 5px;
+		margin-right: 10px;
+		font-size: 15px;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	#points {
+		border: 2px black solid;
+		padding: 5px 0px;
+		font-size: 20px;
+		width: 37%;
+		position: absolute;
+		top: 15vh;
+		left: 57vw;
+		border-radius: 10px;
+
+	}
+
+	#points div {
+		padding-top: 5px;
+		font-weight: bold;
+		font-size: 20px;
+		opacity: 1;
+	}
+
+	#buttons {
+		padding-top: 15px;
+		position: absolute;
+		top: 55vh;
+		left: 52vw;
+	}
+
+	#buttons button {
+		padding: 10px 30px;
+		border-radius: 20px;
+		margin-bottom: 10px;
+		font-size: 17px;
+	}
+
+	#buttons #start {
+		/* display: none; */
+		position: absolute;
+		left: 22vw;
+		top: 8vh;
+		padding: 20px 30px;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+
+	#message {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 30vh;
+		width: 30%;
+		padding: 10px 20px;
+		font-size: 2rem;
+		margin: 0;
+	}
+}
