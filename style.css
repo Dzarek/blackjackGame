@@ -1,11 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Bitter', serif;
-	/* background-image: url(Girl\ Erotic\ Dancing\ -\ 29438.mp4);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
-	background-color: rgba(230, 230, 230, 0.5); */
+	height: 100vh;
+	width: 100vw;
 }
 
 video {
@@ -73,19 +76,19 @@ h2 {
 #playersCards,
 #dealersCards {
 	display: flex;
-	margin-bottom: 30px;
-	min-height: 110px;
+	margin: 30px auto;
+	height: 140px;
 }
 
 .card {
 	background: #fff;
-	width: 60px;
-	padding: 50px 20px;
+	width: 120px;
+	padding: 40px 20px;
 	font-weight: bold;
 	margin-right: 20px;
 	box-shadow: 0.2em 0.2em 0.5em #333;
 	border-radius: 10px;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 .hearts,
@@ -137,15 +140,16 @@ h2 {
 	padding: 10px 20px;
 }
 
+
 @media(orientation:portrait) {
 	body {
 		height: 100vh;
-		width: auto;
-
+		width: 100vw;
+		overflow: hidden;
 	}
 
 	#blackJack {
-		width: 100%;
+		width: 90%;
 		height: 300px;
 		margin: 10px auto;
 		position: relative;
@@ -163,12 +167,12 @@ h2 {
 	#playersCards,
 	#dealersCards {
 		display: flex;
-		margin-bottom: 20px;
-		min-height: 50px;
+		margin: 20px auto;
+		height: 60px;
 	}
 
 	.card {
-		width: 30px;
+		width: 40px;
 		padding: 20px 5px;
 		margin-right: 10px;
 		font-size: 15px;
@@ -242,19 +246,19 @@ h2 {
 		position: absolute;
 		left: 2%;
 		top: 4vh;
-		width: 33%;
+		width: 37%;
 		border-radius: 15px;
 	}
 
 	#playersCards,
 	#dealersCards {
 		display: flex;
-		margin-bottom: 10px;
-		min-height: 40px;
+		margin: 10px auto;
+		height: 60px;
 	}
 
 	.card {
-		width: 30px;
+		width: 40px;
 		padding: 20px 5px;
 		margin-right: 10px;
 		font-size: 15px;
